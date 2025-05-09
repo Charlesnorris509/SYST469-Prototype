@@ -1,0 +1,86 @@
+:root {
+  --tesla-dark: #171a20;
+  --tesla-light: #f5f5f5;
+  --tesla-blue: #3E6AE1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gotham SSm', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: var(--tesla-light);
+}
+
+.tesla-interface {
+  max-width: 1024px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.screen {
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation bar styles */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--tesla-dark);
+  padding: 15px 0;
+  border-top: 1px solid #333;
+}
+
+.nav-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: var(--tesla-blue);
+}
+
+.nav-item.active {
+  color: var(--tesla-blue);
+  font-weight: bold;
+}
+
+/* Screen image container */
+.screen-image-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.screen-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Interactive areas */
+.interactive-area {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.interactive-area:hover {
+  background: rgba(62, 106, 225, 0.3);
+}
