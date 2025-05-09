@@ -12,12 +12,12 @@ function ClimateScreen({ navigateTo, temperature, setTemperature }) {
   return (
     <div className="screen climate-screen">
       <div className="screen-image-container">        <img 
-          src="../images/climate_control.png" 
+          src="/images/climate_control.png" 
           alt="Tesla Climate Control" 
           className="screen-image" 
           onError={(e) => {
             e.target.onerror = null;
-            e.target.src = "../assets/images/climate_main.png";
+            e.target.src = "/assets/images/climate_main.png";
           }}
         />
         

@@ -4,11 +4,11 @@ function MediaScreen({ navigateTo, currentMedia, setCurrentMedia }) {
   const [showSourceMenu, setShowSourceMenu] = useState(false);
     const renderMediaImage = () => {
     if (showSourceMenu) {
-      return "../images/media_source_popup.png";
+      return "/images/media_source_popup.png";
     } else if (currentMedia === 'radio') {
-      return "../images/media_fm_playing.png";
+      return "/images/media_fm_playing.png";
     } else {
-      return "../images/media_initial.png";
+      return "/images/media_initial.png";
     }
   };
   
@@ -18,12 +18,12 @@ function MediaScreen({ navigateTo, currentMedia, setCurrentMedia }) {
     const currentSrc = e.target.src;
     
     // Map the media images to their alternative paths
-    if (currentSrc.includes('../images/media_source_popup.png')) {
-      e.target.src = "../assets/images/audio_source_select.png";
-    } else if (currentSrc.includes('../images/media_fm_playing.png')) {
-      e.target.src = "../assets/images/audio_radio_selected.png";
-    } else if (currentSrc.includes('../images/media_initial.png')) {
-      e.target.src = "../assets/images/audio_main.png";
+    if (currentSrc.includes('/images/media_source_popup.png')) {
+      e.target.src = "/assets/images/audio_source_select.png";
+    } else if (currentSrc.includes('/images/media_fm_playing.png')) {
+      e.target.src = "/assets/images/audio_radio_selected.png";
+    } else if (currentSrc.includes('/images/media_initial.png')) {
+      e.target.src = "/assets/images/audio_main.png";
     }
   };
   

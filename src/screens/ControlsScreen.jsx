@@ -4,11 +4,11 @@ function ControlsScreen({ navigateTo, isLocked, setIsLocked, isFrunkOpen, setIsF
     const renderControlsImage = () => {
     // Try both image paths (root /images and /assets/images)
     if (isFrunkOpen) {
-      return "../images/controls_frunk_open.png";
+      return "/images/controls_frunk_open.png";
     } else if (!isLocked) {
-      return "../images/controls_unlocked.png";
+      return "/images/controls_unlocked.png";
     } else {
-      return "../images/controls_main.png";
+      return "/images/controls_main.png";
     }
   };
   

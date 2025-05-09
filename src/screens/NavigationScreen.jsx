@@ -5,15 +5,15 @@ function NavigationScreen({ navigateTo }) {
     const renderNavigationImage = () => {
     switch(navState) {
       case 'initial':
-        return "../images/map_search_initial.png";
+        return "/images/map_search_initial.png";
       case 'search':
-        return "../images/map_search_keyboard.png";
+        return "/images/map_search_keyboard.png";
       case 'results':
-        return "../images/nav_search_results.png";
+        return "/images/nav_search_results.png";
       case 'active':
-        return "../images/map_navigation_active_generic.png";
+        return "/images/map_navigation_active_generic.png";
       default:
-        return "../images/map_search_initial.png";
+        return "/images/map_search_initial.png";
     }
   };
   
