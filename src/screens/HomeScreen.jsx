@@ -4,12 +4,12 @@ function HomeScreen({ navigateTo }) {
   return (
     <div className="screen home-screen">
       <div className="screen-image-container">        <img 
-          src="/images/home_main.png" 
+          src="../images/home_main.png" 
           alt="Tesla Home Screen" 
           className="screen-image" 
           onError={(e) => {
             e.target.onerror = null;
-            e.target.src = "/assets/images/home_screen.png";
+            e.target.src = "../assets/images/home_screen.png";
           }}
         />
         
